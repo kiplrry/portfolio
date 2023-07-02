@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--FONT);
+    /* font-weight: 500; */
+}
+:root{
+    --FONT: monospace;
+    --YELLOW: #ffd238;
+    --WHITE: #FFF;
+    --BLACK: #1E1E1E;
+}
+body{
+    background: var(--YELLOW);
+}
+nav{
+    height: 2rem;
+    background-color: var(--YELLOW);
+}
+.intro{
+    color: #FFF;
+    background-color: var(--BLACK);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.hi, .web{
+    font-size: 3rem;
+    -webkit-text-stroke: 1px var(--WHITE);
+    color: transparent; 
+}
+.name{
+    font-size: 3.5rem;
+}
+.photo{
+    height: 200px;
+    width: 200px;
+    background-image: url(./assets/larry.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid var(--YELLOW);
+}
