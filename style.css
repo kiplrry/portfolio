@@ -22,6 +22,7 @@
 }
 body{
     overflow-x: hidden;
+    min-width: 100vw;
     min-height: 100vh;
     background-color: var(--PINK_ONE);
 }
