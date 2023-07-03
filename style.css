@@ -1,48 +1,144 @@
-*{
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap');
+*,
+*::after,
+*::before{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: var(--FONT);
-    /* font-weight: 500; */
 }
 :root{
-    --FONT: monospace;
-    --YELLOW: #ffd238;
+    --FONT: 'Jost', sans-serif;;
+    --PINK_ONE: #FFF5EF;
     --WHITE: #FFF;
-    --BLACK: #1E1E1E;
+    --GREY: #606060;
+    --ORANGE: #FF6B00;
+    --BLACK: #101010;
+    --LFONT: 50px;
+    --MFONT: 18px;
+    --BFONT: 21px;
+    --SFONT: 16px;
 }
 body{
-    background: var(--YELLOW);
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: var(--PINK_ONE);
 }
-nav{
-    height: 2rem;
-    background-color: var(--YELLOW);
-}
-.intro{
-    color: #FFF;
-    background-color: var(--BLACK);
+header{
     display: flex;
-    flex-flow: column;
     align-items: center;
-    height: fit-content;
-    padding-block: 1.5rem;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: var(--PINK_ONE);
+    min-height: 73px;
+    min-width: 100dvw;
+    padding-inline: 13px;
+    
+}
+.logo{
+    height: 3;
+}
+.btn{
+    display: flex;
+    height: 21px;
+    background-color: transparent;
+    position: relative;
+    justify-content: center ;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 22px;
+    cursor: pointer;
+}
+.menu, .menu::before, .menu::after{
+    min-height: 3px;
+    cursor: pointer;
+    border: none;
+    min-width: 22px;
+    background-color: var(--BLACK);
+}
+.menu::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.menu::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.one{
+    background-color: var(--PINK_ONE);
+    display: flex;
+    position: relative;
+    isolation: isolate;
+    padding-bottom: 16px;
+}
+.lines, .particleOne{
+    position: absolute;
+}
+.particleOne{
+    width: 70px;
+}
+.lines{
+    top: 70px;
+    left: 10%;
+    z-index: -1;
+    width: 500px;
+}
+.larry{
+    width: 100vw;
+    display: block;
+}
+.two{
+    background-color: var(--PINK_ONE);
+    padding-inline: var(--SFONT);
+    padding-bottom: 30px;
+    position: relative;
+}
+.des img{
+    display: block;
+    height: var(--SFONT);
+    margin-right: 8px;
+}
+.des{
+    display: flex;
+    align-items: center;
 }
 
-.hi, .web{
-    font-size: 3rem;
-    -webkit-text-stroke: 1px var(--WHITE);
-    color: transparent; 
+h1{
+    font-size: var(--SFONT);
+    font-weight: 400;
+    text-transform: uppercase;
 }
-.name{
-    font-size: 3.5rem;
+.creative h2{
+    font-size: var(--LFONT);
 }
-.photo{
-    min-height: 200px;
-    min-width: 200px;
-    background-image: url(./assets/larry.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    border: 2px solid var(--YELLOW);
+
+.creative h2 span{
+    color: var(--ORANGE);
+}
+.desc{
+    padding-top: 20px;
+    font-size: var(--MFONT);
+}
+.desc p span{
+    color: var(--ORANGE);
+    font-size: 1.2rem;
+}
+.cv_btn{
+    width: 230px;
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--ORANGE);
+    color: var(--WHITE);
+    font-size: var(--BFONT);
+    margin-top: 30px;
+}
+.particleTwo{
+    position: absolute;
+    right: 40px;
+    bottom: 5px;
 }
