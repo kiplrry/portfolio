@@ -26,6 +26,25 @@ body{
     min-height: 100vh;
     background-color: var(--PINK_ONE);
 }
+.logoImg{
+    width: max-content;
+    position: relative;
+    height: 40px;
+    isolation: isolate;
+}
+.logoImg h2{
+    display: inline;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: calc(50% - 15px);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--ORANGE);
+}
 header{
     display: flex;
     align-items: center;
@@ -119,7 +138,7 @@ h1, .des h2{
     font-weight: 400;
     text-transform: uppercase;
 }
-.creative h2, .services_title{
+.creative h2, .sec_title{
     letter-spacing: 4px;
     font-size: var(--LFONT);
 }
@@ -175,12 +194,14 @@ h1, .des h2{
     color: var(--ORANGE);
 }
 .four{
+    padding-top: 2rem;
+    background-color: var(--WHITE);
     display: flex;
     flex-flow: column;
     align-items: center;
     padding-bottom: 3rem;
 }
-.services_title{
+.sec_title{
     text-align: center;
 }
 .serv_comp{
@@ -193,12 +214,64 @@ h1, .des h2{
     padding-inline: 70px;
     height: 280px;
     width: 100%;
-    border: 1px solid var(--ORANGE);
+    border: 1px solid var(--PINK_ONE);
     border-radius: 6px; 
+}
+.serv_comp:hover{
+    background-color: var(--PINK_ONE);
 }
 .serv_comp h3{
     font-size: 1.5rem;
 }
 .serv_container{
     margin-top: 15px;
+}
+.center{
+    width: 100%;
+    justify-content: center;
+}
+.contact{
+    padding-block: 2rem;
+}
+.inp, textarea{
+    display: block;
+    min-width: 100%;
+    min-height: 68px;
+    border: 1px solid var(--ORANGE);
+    border-radius: 6px;
+    font-size: var(--MFONT);
+    padding-inline: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+form{
+    padding-top: 2rem;
+}
+.inp:focus{
+    outline: 3px solid var(--ORANGE);
+    border: 2px solid rgb(0, 126, 168);
+}
+.submit{
+    font-family: inherit;
+}
+.item{
+    display: flex;
+    margin-top: 2rem;
+}
+.item h3{
+    font-size: 1.5rem;
+}
+.itemImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin-right: 2rem;
+    border-radius: 6px;
+    background-color: var(--ORANGE);
+    color: #FFF;
+}
+footer{
+    height: 50px;
+    background-color: #101010;
 }
