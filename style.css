@@ -22,7 +22,7 @@
 }
 body{
     overflow-x: hidden;
-    min-width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     background-color: var(--PINK_ONE);
 }
@@ -32,7 +32,7 @@ header{
     justify-content: space-between;
     background-color: var(--PINK_ONE);
     min-height: 73px;
-    min-width: 100dvw;
+    min-width: 100vw;
     padding-inline: 13px;
     
 }
@@ -68,6 +68,9 @@ header{
     position: absolute;
     top: 0;
     right: 0;
+}
+section{
+    overflow: hidden;
 }
 .one{
     background-color: var(--PINK_ONE);
