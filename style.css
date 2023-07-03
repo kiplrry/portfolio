@@ -114,12 +114,13 @@ section{
     align-items: center;
 }
 
-h1{
+h1, .des h2{
     font-size: var(--SFONT);
     font-weight: 400;
     text-transform: uppercase;
 }
-.creative h2{
+.creative h2, .services_title{
+    letter-spacing: 4px;
     font-size: var(--LFONT);
 }
 
@@ -153,11 +154,51 @@ h1{
 .three{
     padding-bottom: 2rem;
 }
-.three h2{
+.anything h2{
+    letter-spacing: 4px;
     padding-top: var(--SFONT);
-    font-size: 40px;
+    font-size: 50px;
 }
 .three p{
     padding-top: var(--SFONT);
     font-size: var(--MFONT);
+}
+.item_large{
+    font-size: var(--MFONT);
+    display: flex;
+    margin-top: 16px;
+}
+.item_large img{
+    margin-right: 15px;
+}
+.counter{
+    color: var(--ORANGE);
+}
+.four{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.services_title{
+    text-align: center;
+}
+.serv_comp{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-around;
+    padding-block: 60px;
+    padding-inline: 70px;
+    height: 280px;
+    width: 100%;
+    border: 1px solid var(--ORANGE);
+    border-radius: 6px; 
+}
+.serv_comp h3{
+    font-size: 1.5rem;
+}
+.serv_container{
+    margin-top: 15px;
 }
