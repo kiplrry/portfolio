@@ -72,6 +72,9 @@ header{
 section{
     overflow: hidden;
 }
+.sec{
+    padding-inline: 16px;
+}
 .one{
     background-color: var(--PINK_ONE);
     display: flex;
@@ -132,6 +135,7 @@ h1{
     font-size: 1.2rem;
 }
 .cv_btn{
+    cursor: pointer;
     width: 230px;
     height: 56px;
     border: none;
@@ -145,4 +149,15 @@ h1{
     position: absolute;
     right: 40px;
     bottom: 5px;
+}
+.three{
+    padding-bottom: 2rem;
+}
+.three h2{
+    padding-top: var(--SFONT);
+    font-size: 40px;
+}
+.three p{
+    padding-top: var(--SFONT);
+    font-size: var(--MFONT);
 }
