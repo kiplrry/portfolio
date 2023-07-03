@@ -131,6 +131,7 @@ section{
 .des{
     display: flex;
     align-items: center;
+    min-height: fit-content;
 }
 
 h1, .des h2{
@@ -271,7 +272,13 @@ form{
     background-color: var(--ORANGE);
     color: #FFF;
 }
+.fter{
+    font-size: 1.5rem;
+    color: white;
+}
 footer{
+    display: flex;
+    justify-content: center;
     height: 50px;
     background-color: #101010;
 }
