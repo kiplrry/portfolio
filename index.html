@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script defer src="./main.js"></script>
 </head>
 <body>
     <header>
@@ -12,18 +13,26 @@
             <h2>KipLarry</h2>
             <div class="circle"></div>
         </div>
-        <nav></nav>
         <div class="btn">
-        <button class="menu"></button>
+        <button class="menu" id="menubtn"></button>
         </div>
+        <nav class="openMenu" id="menu_nav">
+            <ul class="menuList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
 
-    <section class="one">
+    <section class="one" id="home">
         <img src="./assets/particleOne.png" alt="" srcset="" width="50" class="particleOne">
         <img src="./assets/homeNannerShape.png" alt="" srcset="" width="290" class="lines">
         <img src="./assets/larry.png" alt="me" srcset="" class="larry">
     </section>
-    <section class="two sec">
+    <section class="two sec" id="about">
         <div class="des">
             <img src="./assets/orangeDot.png" alt="">
             <h1>I Am a Web Developer</h1>
@@ -58,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section class="four sec">
+    <section class="four sec" id="services">
         <div class="des">
             <img src="./assets/orangeDot.png" alt="">
             <h2>My Services</h2>
@@ -89,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section class="contact sec">
+    <section class="contact sec" id="contact">
         <div class="des center">
             <img src="./assets/orangeDot.png" alt="">
             <h2>My Contact</h2>
