@@ -57,15 +57,19 @@ header{
     min-height: 73px;
     min-width: 100vw;
     padding-inline: 13px;
-    
+}
+.fixedHeader{
+    position: fixed;
+    top: 0px;
+    left: 0px
 }
 .logo{
     height: 3;
 }
 .openMenu{
-    top: 60px;
+    top: 0px;
     left: 40%;
-    z-index: 7;
+    z-index: 4;
     flex-grow: 1;
     margin-left: 13px;
     position: fixed;
@@ -147,12 +151,30 @@ section{
 }
 .particleOne{
     width: 70px;
+    animation: spin 20s linear 5s infinite forwards;
+}
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
 }
 .lines{
     top: 70px;
     left: 10%;
     z-index: -1;
     width: 500px;
+    animation: lines 8s linear 5s infinite forwards;
+}
+@keyframes lines {
+    0%{translate: 0;}
+    50%{translate: -40px -40px}
+    100%{translate: 0}
 }
 .larry{
     width: 100vw;
@@ -163,6 +185,7 @@ section{
     padding-inline: var(--SFONT);
     padding-bottom: 30px;
     position: relative;
+    isolation: isolate;
 }
 .des img{
     display: block;
@@ -211,6 +234,7 @@ h1, .des h2{
     position: absolute;
     right: 40px;
     bottom: 5px;
+    z-index: -1;
 }
 .three{
     padding-bottom: 2rem;
@@ -323,3 +347,7 @@ footer{
     height: 50px;
     background-color: #101010;
 }
+
+/* @media screen {
+    
+} */
