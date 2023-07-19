@@ -349,3 +349,8 @@ footer{
     background-color: #101010;
 }
 
+@media (min-width: 820px) {
+    .sec{
+        padding-inline: 3rem;
+    }
+}
