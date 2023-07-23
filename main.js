@@ -10,11 +10,4 @@ function toggleMenu(e){
     }
 
 }
-// document.addEventListener("scroll", e=>{
-//     let rect = header.getBoundingClientRect()
-//     if(rect.top < -(rect.height)){
-//         header.classList.add("fixedHeader")
-//     }
-// })
-
 body.addEventListener("click", toggleMenu)
